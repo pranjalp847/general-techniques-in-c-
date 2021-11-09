@@ -1,0 +1,47 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    string s1="aaacb",s2="calaa";
+    //cin >> s1 >> s2;
+    //int a[s1.length()],b[s2.length()];
+    
+    /*for(int i=0;i<s1.length();i++)
+    {
+        a[i]=s1[i];
+    }
+    
+    for(int i=0;i<s2.length();i++)
+    */
+    
+    int sum=0;
+    
+    sort(s1.begin(),s1.end());
+    sort(s2.begin(),s2.end());
+    
+    if(s1.length()==s2.length())
+    {
+        for(int i=0;i<s1.length();i++)
+      {
+        if(s1[i]==s2[i])
+        {
+            sum++;
+        }
+      }
+      
+      if(sum==s1.length())
+      {
+          cout << "Code working" << endl;
+      }
+      else
+      {
+          cout << "Not same bro" << endl;
+      }
+    }
+    
+    cout << sum;
+    return 0;
+}
