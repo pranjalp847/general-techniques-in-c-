@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n,i,a,s[10],u,sum=0;
+	cin >> n;
+	for(i=0;n%10!=0;i++)
+	{
+	    a=n/10;
+	    s[i]=n%10;
+	     n=a;
+	     sum++;
+	}
+	cout << sum
+	;
+
+	for(i=0;i<=sum;i++)
+	{
+	    u=sum-i;
+	    if(s[u]==0)
+	    {
+	        cout << "Zero ";
+	    }
+	   
+	    else if(s[u]==1)
+	    {
+	        cout << "One ";
+	    }
+	    else if(s[u]==2)
+	    {
+	        cout << "Two ";
+	    }
+	    else if(s[u]==3)
+	    {
+	        cout << "Three ";
+	    }
+	    else if(s[u]==4)
+	    {
+	        cout << "Four ";
+	    }
+	     else if(s[u]==5)
+	     {
+	         cout << "Five ";
+	     }
+	     else if(s[u]==6)
+	     {
+	         cout << "Six ";
+	     }
+	     else if(s[u]==7)
+	     {
+	         cout << "Seven ";
+	     }
+	     else if(s[u]==8)
+	     {
+	         cout << "Eight ";
+	     }
+	     else if(s[u]==9)
+	     {
+	         cout << "Nine ";
+	     }
+	         
+	}
+	return 0;
+}
+
